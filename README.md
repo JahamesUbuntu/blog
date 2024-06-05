@@ -18,7 +18,7 @@ Volg de onderstaande stappen om het project op je lokale machine te installeren 
    composer install
     ```
    
-3. **Maak een .env**: Maak een bestand .env in de root map van het project en kopieer de inhoud van .env.example in het nieuwe bestand.
+3. **Maak een .env bestand**: Maak een bestand genaamd ".env" in de root map van het project en kopieer de inhoud van ".env.example" in het nieuwe bestand.
 
 
 4. **Genereer een applicatie sleutel**
