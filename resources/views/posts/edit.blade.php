@@ -1,6 +1,6 @@
 <x-layouts.app>
     <main class="mt-2" x-data="alpineData()">
-        <form action="{{ route('posts.update', $post) }}" method="POST" class="space-y-2">
+        <form @submit.prevent="confirmForm($el, 'Are you sure you want to update this post?')" action="{{ route('posts.update', $post) }}" method="POST" class="space-y-2">
             @csrf
             @method('PATCH')
             <x-forms.input label="Title" name="title" placeholder="An interesting title" value="{{ $post->title }}"></x-forms.input>
